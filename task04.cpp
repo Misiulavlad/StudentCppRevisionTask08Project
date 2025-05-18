@@ -39,7 +39,7 @@
  *	[output 6]: -1
  */
 int task04(int n, int m, int x, int y) {
-    if (n <= 0 || m <= 0 || x < 0 || y < 0 || x > n || y > m) {
+    if (n <= 0 || m <= 0 || x < 0 || y < 0 || x >= n || y >= m) {
         return -1;
     }
 
@@ -50,4 +50,3 @@ int task04(int n, int m, int x, int y) {
 
     return minDist;
 }
-
